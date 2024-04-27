@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url("L4.png");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid black;
+            width: 80%; /* Adjust as needed */
+            height: 80%; /* Adjust as needed */
+            max-width: 800px; /* Adjust as needed */
+            max-height: 600px; /* Adjust as needed */
+        }
+
+        .container img {
+            width: 100%; /* Make the image fill the container width */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 90%; /* Ensure the image does not exceed its original size */
+            max-height: 90%; /* Ensure the image does not exceed its original size */
+            opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Move the image up slightly */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Return to original position */
+    }
+}
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Examples</h1>
+        <img src="bas.png" alt="Description of the image" width="600" height="450">
+    </div>
+
+    <a id="lesson2Button" href="motivational.html">Next</a>
+    <script src="Styles.js"></script>
+</body>
+</html>
